@@ -28,25 +28,19 @@ export class AppComponent {
     return this.randomImgUrl + '?cache=' + new Date().getTime()
   }
 
-  searchMeme(){
+  getImage(){
      this.imagePath = this.getRandomImgUrl();
   }
 
-  getGifs(){
-    // this.loading = true;
+  getGif(){
     axios.get("https://api.imgflip.com/get_memes")
     .then((response)  =>  {
-      // this.loading = false;
-      // console.log(response);
       let num = 0;
       num = this.getRandomArbitrary(0,100);
-      // console.log(num);
       this.gifs = response.data.data.memes[num];
-      this.imagePath = response.data.data.memes[num].url;
-      
-      console.log(this.gifs);
+      this.gifPath = response.data.data.memes[num].url;
     }, (error)  =>  {
-      // this.loading = false;
+
     })
   }
 

@@ -5,7 +5,7 @@
     alt="Angular Logo"
     [src]="imageLogo"
   />
-  <span>Random Image Search</span>
+  <span>MemeAr</span>
     <div class="spacer"></div>
 
 </div>
@@ -20,11 +20,11 @@
   <input type="hidden" #selection>
 
   <div class="card-container">
-    <button class="card card-small" (click)="searchMeme()">
+    <button class="card card-small" (click)="getImage()">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
-      <span>New Image</span>
+      <span>Random Image</span>
     </button>
-    <button class="card card-small" (click)="getGifs()">
+    <button class="card card-small" (click)="getGif()">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
       <span>Random Gif</span>
     </button>
@@ -39,13 +39,13 @@
     >
   </div>
 
-  <!-- <div class="terminal">
+  <div class="terminal">
     <img *ngIf="this.gifPath"
     [src]="gifPath" 
     alt="myimage"
     style="display: block; margin: auto;"
     >
-  </div> -->
+  </div>
 
 
 

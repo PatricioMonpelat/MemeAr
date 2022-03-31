@@ -1,6 +1,6 @@
 # MemeAr
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.6.
+This is a small project that gets random images or gifs and was generated with Angular version 13.2.6.
 
 ## Development server
 

@@ -38,9 +38,9 @@ export class AppComponent {
       let num = 0;
       num = this.getRandomArbitrary(0,100);
       this.gifs = response.data.data.memes[num];
-      this.gifPath = response.data.data.memes[num].url;
+      this.imagePath = response.data.data.memes[num].url;
     }, (error)  =>  {
-
+      alert('error fetching memes');
     })
   }
 
